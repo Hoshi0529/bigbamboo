@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイページ</title>
+    <link rel="stylesheet" href="./../css/old_mypage.css">
+</head>
+<body>
+    <header>
+        <h1>マイページ</h1>
+    </header>
+    <main>
+        <section class="profile">
+            <h2>プロフィール情報</h2>
+            <p>名前: <span id="user-name">山田 太郎</span></p>
+            <p>メール: <span id="user-email">taro@example.com</span></p>
+        </section>
+        <section class="posts">
+            <h2>投稿一覧</h2>
+            <div id="postsContainer">
+                <!-- 例として、いくつかの投稿と返信を事前に配置 -->
+                <div class="post-wrapper">
+                    <div class="message from-you">あなた: 電球が切れて困っているので直してほしいです。</div>
+                    <div class="message from-other">相手: 直しに行くので都合のいい日を教えてください。</div>
+                    <div class="reply-form">
+                        <textarea placeholder="返信内容を入力してください" rows="3"></textarea>
+                        <button class="reply-button" onclick="addReply(this)">返信を送信</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* リセットスタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* コンテナ */
+.container {
+    width: 90%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 各カード */
+.swipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transform: scale(1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+}
+
+/* 投稿のタイトル */
+.post-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* 投稿の内容 */
+.post-content {
+    font-size: 16px;
+    color: #555;
+}
+
+/* スワイプ用アニメーションのためのクラス */
+.swipe-left {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.swipe-right {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/* スワイプの前のカード */
+.swipe-card:nth-child(1) {
+    top: 0;
+}
+
+.swipe-card:nth-child(2) {
+    top: -100%;
+}
+
+.swipe-card:nth-child(3) {
+    top: -200%;
+}

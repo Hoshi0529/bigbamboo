@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fff;
     padding: 400px;
+    scale: auto;
 }
 
 .login-container {
@@ -30,7 +31,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: 15px;   
+    scale: auto;
 }
 
 label {

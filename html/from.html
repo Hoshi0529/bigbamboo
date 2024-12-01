@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>投稿フォーム</title>
-    <link rel="stylesheet" href="./../css/mypage.css">
-    <script defer src="./../js/script.js"></script>
-</head>
+    <head>    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>新規投稿</title>
+        <link rel="stylesheet"  href="./../css/form.css">
+    </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>投稿フォーム</h1>
-        </div>
-
-        <div class="post-form">
-            <h2>新しい投稿を作成</h2>
-            <textarea id="new-post-content" class="editable" placeholder="ここに投稿内容を入力..."></textarea>
-            <button id="submit-post" class="save-button">投稿する</button>
-        </div>
-    </div>
+<section class="post-form">
+    <h1>新規投稿</h1>
+    <form id="postForm">
+        <textarea id="postContent" placeholder="ここに困り事を入力してください" rows="4"></textarea>
+        <button type="button" onclick="addPost()">投稿</button>
+    </form>
+</section>
 </body>
 </html>

@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>マイページ</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>若者向けマイページ</title>
+    <link rel="stylesheet" href="./../css/mypage.css">
 </head>
 <body>
-    <header>
-        <h1>マイページ</h1>
-    </header>
-    <main>
-        <section class="profile">
-            <h2>プロフィール情報</h2>
-            <p>名前: <span id="user-name">山田 太郎</span></p>
-            <p>メール: <span id="user-email">taro@example.com</span></p>
-        </section>
-        <section class="post-form">
-            <h2>新規投稿</h2>
-            <form id="postForm">
-                <textarea id="postContent" placeholder="ここに投稿内容を入力してください" rows="4"></textarea>
-                <button type="button" onclick="addPost()">投稿</button>
-            </form>
-        </section>
-        <section class="posts">
-            <h2>投稿一覧</h2>
-            <div id="postsContainer"></div>
-        </section>
-    </main>
-    <script src="scripts.js"></script>
+    <div class="container">
+        <div class="header">
+            <h1>マイページ</h1>
+        </div>
+        
+        <div class="user-info">
+            <h2>ユーザー情報</h2>
+            <p>名前: 山田太郎</p>
+            <p>メール: taro@example.com</p>
+        </div>
+        
+        <div class="replies">
+            <h2>返信一覧</h2>
+            <div class="reply">
+                <p class="reply-title">相手の投稿:</p>
+                <p class="reply-content">電球が切れていて困っています。直してほしいです。</p>
+                <p class="my-reply-title">あなたの返信:</p>
+                <p class="my-reply-content">直せに行けます！都合のいい日を教えてください。</p>
+                <textarea class="reply-input" placeholder="ここに返信を入力..."></textarea>
+                <button class="button">返信する</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

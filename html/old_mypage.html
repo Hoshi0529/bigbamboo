@@ -3,34 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>マイページ</title>
+    <title>高齢者向けマイページ</title>
     <link rel="stylesheet" href="./../css/old_mypage.css">
 </head>
 <body>
-    <header>
-        <h1>マイページ</h1>
-    </header>
-    <main>
-        <section class="profile">
-            <h2>プロフィール情報</h2>
-            <p>名前: <span id="user-name">山田 太郎</span></p>
-            <p>メール: <span id="user-email">taro@example.com</span></p>
-        </section>
-        <section class="posts">
-            <h2>投稿一覧</h2>
-            <div id="postsContainer">
-                <!-- 例として、いくつかの投稿と返信を事前に配置 -->
-                <div class="post-wrapper">
-                    <div class="message from-you">あなた: 電球が切れて困っているので直してほしいです。</div>
-                    <div class="message from-other">相手: 直しに行くので都合のいい日を教えてください。</div>
-                    <div class="reply-form">
-                        <textarea placeholder="返信内容を入力してください" rows="3"></textarea>
-                        <button class="reply-button" onclick="addReply(this)">返信を送信</button>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="header">
+            <h1>マイページ</h1>
+        </div>
+        
+        <div class="user-info">
+            <h2>ユーザー情報</h2>
+            <p>名前: 山田太郎</p>
+            <p>メール: taro@example.com</p>
+        </div>
+        
+        <div class="replies">
+            <h2>返信一覧</h2>
+            <div class="reply">
+                <p class="reply-title">相手の投稿:</p>
+                <p class="reply-content">直しに行けます。都合のいい日を教えてください。</p>
+                <p class="my-reply-title">あなたの返信:</p>
+                <p class="my-reply-content">土曜日の午後はどうですか？</p>
+                <textarea class="reply-input" placeholder="ここに返信を入力..."></textarea>
+                <button class="button">返信する</button>
             </div>
-        </section>
-    </main>
-    <script src="scripts.js"></script>
+        </div>
+    </div>
 </body>
 </html>

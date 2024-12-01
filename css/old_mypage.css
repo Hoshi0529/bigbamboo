@@ -1,16 +1,16 @@
 body {
-    font-size: 1.2em;
+    font-size: 1.5em;
     background-color: #fafafa;
     color: #333;
     margin: 0;
-    padding: 10px;
+    padding: 20px;
     font-family: Arial, sans-serif;
 }
 .container {
-    max-width: 100%;
+    max-width: 800px;
     margin: auto;
     background: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -33,6 +33,32 @@ body {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
+}
+.editable, .reply-input {
+    color: #666; /* フォントを少し薄く */
+    margin-bottom: 10px;
+    width: 500px; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+.save-button, .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+    width: 500px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.save-button:hover, .button:hover {
+    background-color: #45a049;
 }
 .reply-title {
     font-weight: bold;
@@ -58,26 +84,4 @@ body {
     padding: 10px;
     border-radius: 5px;
     text-align: left;
-}
-.reply-input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-}
-.button {
-    background-color: #4682b4;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-size: 1em;
-    width: 100%;
-}
-.button:hover {
-    background-color: #4169e1;
 }

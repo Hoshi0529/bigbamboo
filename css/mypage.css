@@ -1,16 +1,16 @@
 body {
-    font-size: 1.2em; /* スマホ向けにフォントサイズを少し小さく */
-    background-color: #e6e6e6;
+    font-size: 1.5em;
+    background-color: #fafafa;
     color: #333;
     margin: 0;
-    padding: 10px; /* スマホ向けにパディングを小さく */
+    padding: 20px;
     font-family: Arial, sans-serif;
 }
 .container {
-    max-width: 100%; /* コンテナの幅をスマホ画面に合わせる */
+    max-width: 800px;
     margin: auto;
     background: white;
-    padding: 10px; /* スマホ向けにパディングを小さく */
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -21,63 +21,67 @@ body {
 .header h1, .footer {
     font-weight: bold;
     color: #333;
-    background-color: #d3d3d3; /* マイページをシンプルなグレーに */
+    background-color: #d3d3d3;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
 }
 .user-info h2, .replies h2 {
     font-weight: bold;
-    color: #4b8e8d; /* パステルグリーン */
+    color: #4b8e8d;
     background-color: #e0f7fa;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
 }
+.editable, .reply-input {
+    color: #666; /* フォントを少し薄く */
+    margin-bottom: 10px;
+    width: 500px; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+.save-button, .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+    width: 500px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.save-button:hover, .button:hover {
+    background-color: #45a049;
+}
 .reply-title {
     font-weight: bold;
-    color: #7986cb; /* パステルブルー */
+    color: #7986cb;
     background-color: #e8eaf6;
     padding: 10px;
     border-radius: 5px;
     text-align: left;
 }
 .reply-content, .my-reply-content {
-    font-size: 1em; /* スマホ向けにフォントサイズを少し小さく */
+    font-size: 1em;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #f9f9f9; /* シンプルな背景色 */
-    border-left: 5px solid #ccc; /* シンプルな強調線 */
-    line-height: 1.6; /* 行間を調整 */
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+    line-height: 1.6;
 }
 .my-reply-title {
     font-weight: bold;
-    color: #ff8a65; /* パステルオレンジ */
+    color: #ff8a65;
     background-color: #ffebee;
     padding: 10px;
     border-radius: 5px;
     text-align: left;
-}
-.reply-input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1em; /* スマホ向けにフォントサイズを少し小さく */
-}
-.button {
-    background-color: #4682b4;
-    color: white;
-    padding: 10px; /* スマホ向けにパディングを小さく */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-size: 1em; /* スマホ向けにフォントサイズを少し小さく */
-    width: 100%; /* ボタンをスマホ幅いっぱいに広げる */
-}
-.button:hover {
-    background-color: #4169e1;
 }

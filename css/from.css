@@ -1,0 +1,68 @@
+body {
+    font-size: 1.5em;
+    background-color: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.header, .footer {
+    text-align: center;
+    padding: 10px 0;
+}
+.header h1, .footer {
+    font-weight: bold;
+    color: #333;
+    background-color: #d3d3d3;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.post-form {
+    margin-top: 20px;
+    text-align: center;
+}
+.post-form h2 {
+    font-weight: bold;
+    color: #333;
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    width: 80%; /* 幅を80%に設定して中央揃え */
+}
+.editable {
+    color: #666;
+    margin-bottom: 10px;
+    width: 80%; /* 幅を80%に設定して中央揃え */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #fff;
+    display: inline-block; /* 中央揃えに */
+}
+.save-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+    width: 80%; /* ボタンの幅を80%に */
+    display: inline-block; /* 中央揃えに */
+}
+.save-button:hover {
+    background-color: #45a049;
+}

@@ -13,11 +13,12 @@ body {
 }
 
 .login-container {
-    width: 250px;
+    width: auto;
     padding: 20px;
     border: 1px solid #ddd;
     background-color: #1eff00;
     text-align: center;
+    scale: auto;
 }
 
 .login-title {

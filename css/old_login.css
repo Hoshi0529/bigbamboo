@@ -1,15 +1,13 @@
 @import url(../sanitize.css);
 
 body {
-    display: flex;
-    justify-content: right;
+
     align-items: center;
     height: 100vh;
     margin: 0;
     width: auto;
     font-family: Arial, sans-serif;
     background-color: #fff;
-    padding: 400px;
     scale: auto;
 }
 

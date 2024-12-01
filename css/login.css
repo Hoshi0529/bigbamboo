@@ -1,15 +1,14 @@
 @import url(../sanitize.css);
 
 body {
-    display: flex;
-    justify-content: right;
+
     align-items: center;
     height: 100vh;
     width: auto;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #fff;
-    padding: 400px;
+
 }
 
 .login-container {

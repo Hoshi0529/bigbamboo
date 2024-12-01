@@ -2,7 +2,7 @@
 
 
 body {
-    justify-content: right;
+    justify-content: center;
     height: auto;
     width: auto;
     margin: 0;
@@ -10,7 +10,7 @@ body {
     background-color:#f9f9f9;
     padding: 400px;
     text-align: center;
-    transform: scale();
+    transform: scale(1);
 
 }
 
@@ -18,17 +18,16 @@ body {
     width: 250px;
     padding: 60px;
     margin: 60px;
-    
     background-color: #3df2f8;
     text-align: center;
-    transform: scale();
+    transform: scale(1);
 }
 
 
 h1{
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 20px 100%;
     background-color: #00b5c5;
     text-align: center;
 }
